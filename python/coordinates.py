@@ -14,7 +14,7 @@ headers = {
     "Content-Type": "application/json",
 }
 
-response = requests.post(URL, json=payload, headers=headers, timeout=30)
+response = requests.post(URL, json=payload, headers=headers, timeout=5)
 response.raise_for_status()
 
 print(response.json())
